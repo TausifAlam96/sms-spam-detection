@@ -1,0 +1,26 @@
+{% extends 'layout.html' %} {% block content %}
+<h2>SMS Spam Predictor</h2>
+
+<form method="POST">
+  <label>Enter your text message here:</label><br />
+  <textarea
+    name="message"
+    rows="5"
+    style="width: 100%; margin-top: 10px"
+    required
+  >
+{{ message }}</textarea
+  ><br /><br />
+  <button type="submit">Analyze Message</button>
+</form>
+
+{% if prediction %}
+<hr />
+<h3>Analysis Result:</h3>
+{% if prediction == 'SPAM' %}
+<p class="result-spam">🚨 This message is likely <strong>SPAM</strong>.</p>
+{% else %}
+<p class="result-safe">
+  ✅ This message appears to be <strong>SAFE (Not Spam)</strong>.
+</p>
+{% endif %} {% endif %} {% endblock %}
