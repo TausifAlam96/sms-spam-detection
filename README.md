@@ -33,7 +33,7 @@ Assumes your _spam.csv_ has two columns: v1 (labels like "ham" or "spam") and v2
 ## 3. The Flask Application (app.py)
 This file sets up a local SQLite database for users, manages user sessions via Flask-Login, and handles the POST request to predict spam.
 
-## Next Steps
-- Run python app.py in your terminal.
+## Final Steps
+- Run python __app.py__ in your terminal.
 - Open your browser and navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 - Register a new user, log in, and test some text messages!
