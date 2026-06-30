@@ -10,17 +10,18 @@ We will break this project into three parts:
 ## 1. Project Setup and Prerequisites
 First, organize your project directory like this:
 
->``` flask_spam_app/  
+```
+>flask_spam_app/  
 >│  
 >├── spam.csv                 # Your training dataset  
 >├── train_model.py           # Script to train and save the model  
 >├── app.py                   # Main Flask application  
 >└── templates/               # Folder for HTML files  
->```   ├── layout.html  
+>   ├── layout.html  
 >   ├── login.html  
 >   ├── register.html  
 >   └── index.html  
-
+```
 Install the required Python libraries via your terminal:
 
 > pip install Flask Flask-SQLAlchemy Flask-Login pandas scikit-learn werkzeug
