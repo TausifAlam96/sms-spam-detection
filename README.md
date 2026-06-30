@@ -11,16 +11,16 @@ We will break this project into three parts:
 First, organize your project directory like this:
 
 ```
->flask_spam_app/  
->│  
->├── spam.csv                 # Your training dataset  
->├── train_model.py           # Script to train and save the model  
->├── app.py                   # Main Flask application  
->└── templates/               # Folder for HTML files  
->   ├── layout.html  
->   ├── login.html  
->   ├── register.html  
->   └── index.html  
+flask_spam_app/  
+│  
+├── spam.csv                 # Your training dataset  
+├── train_model.py           # Script to train and save the model  
+├── app.py                   # Main Flask application  
+└── templates/               # Folder for HTML files  
+   ├── layout.html  
+   ├── login.html  
+   ├── register.html  
+   └── index.html  
 ```
 Install the required Python libraries via your terminal:
 
@@ -31,10 +31,10 @@ This script reads your .csv data, trains a Naive Bayes classifier, and saves bot
 
 Assumes your spam.csv has two columns: v1 (labels like "ham" or "spam") and v2 (the message text).
 
->Run this script once using python train_model.py. It will generate model.pkl and vectorizer.pkl in your project folder.
+>Run this script once using python **train_model.py**. It will generate __model.pkl__ and _vectorizer.pkl_ in your project folder.
 
 ## 3. The Flask Application (app.py)
->This file sets up a local SQLite database for users, manages user sessions via Flask-Login, and handles the POST request to predict spam.
+This file sets up a local SQLite database for users, manages user sessions via Flask-Login, and handles the POST request to predict spam.
 
 ## Next Steps
 - Run python app.py in your terminal.
