@@ -16,10 +16,10 @@ First, organize your project directory like this:
 >├── train_model.py           # Script to train and save the model  
 >├── app.py                   # Main Flask application  
 >└── templates/               # Folder for HTML files  
->>   ├── layout.html  
->>   ├── login.html  
->>   ├── register.html  
->>   └── index.html  
+>```   ├── layout.html  
+>   ├── login.html  
+>   ├── register.html  
+>   └── index.html  
 
 Install the required Python libraries via your terminal:
 
