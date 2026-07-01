@@ -10,4 +10,4 @@ venv/
 instance/
 
 # Model (optional)
-*.pkl
+# *.pkl
